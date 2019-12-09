@@ -74426,3 +74426,946 @@ Caused by: java.nio.file.FileSystemException: /var/local/geoserver/temp/wcs: Res
 	at java.base/java.nio.file.Files.readAttributes(Files.java:1763)
 	at org.geoserver.platform.resource.FileSystemResourceStore$FileSystemResource.getType(FileSystemResourceStore.java:446)
 	... 8 more
+2019-12-09 10:14:04,268 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-12-09 10:14:04,612 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.1.0
+    baseUrl = http://localhost:80/geoserver/
+    query[0]:
+        srsName = EPSG:4326
+        typeName[0] = {muc}study_area_union
+    outputFormat = json
+    resultType = results
+2019-12-09 10:14:04,778 INFO [wfs.json] - about to encode JSON
+2019-12-09 10:14:23,188 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-12-09 10:14:23,305 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.1.0
+    baseUrl = http://localhost:80/geoserver/
+    query[0]:
+        srsName = EPSG:4326
+        typeName[0] = {muc}study_area_union
+    outputFormat = json
+    resultType = results
+2019-12-09 10:14:23,334 INFO [wfs.json] - about to encode JSON
+2019-12-09 10:14:28,109 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-12-09 10:14:28,440 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:80/geoserver/
+	Bbox = SRSEnvelope[-988177.9016707586 : -944608.795548208, 5027387.560487006 : 5054465.37775703]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 1417
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@9c7a011e]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-988177.9016707586,5027387.560487006,-944608.795548208,5054465.37775703, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=2280, HEIGHT=1417, TRANSPARENT=true, LAYERS=cite:heatmap_population}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=style_heatmap_population]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 2280
+2019-12-09 10:14:53,662 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-12-09 10:14:53,735 INFO [geoserver.wms] - 
+Request: getLegendGraphic
+	BaseUrl = http://localhost:80/geoserver/
+	Env = {}
+	Exceptions = SE_XML
+	FeatureType = null
+	Format = image/png
+	Get = false
+	Height = 20
+	Kvp = {REQUEST=GetLegendGraphic, FORMAT=image/png, SERVICE=WMS, LAYER=cite:heatmap_population}
+	Layers = [SimpleFeatureTypeImpl muc:heatmap_population identified extends Feature(geom:geom,grid_id:grid_id,area_isochrone:area_isochrone,pois:pois,index_004:index_004,index_0035:index_0035,index_003:index_003,index_0025:index_0025,index_002:index_002,index_0015:index_0015,index_001:index_001,population:population,percentile_population:percentile_population,percentile_area_isochrone:percentile_area_isochrone)]
+	LegendOptions = {}
+	Legends = [LegendRequest [layer=cite:heatmap_population, name=muc:heatmap_population styleName=style_heatmap_population, title=heatmap_population, legendInfo=null]]
+	Locale = null
+	RawKvp = {REQUEST=GetLegendGraphic, FORMAT=image/png, SERVICE=WMS, LAYER=cite:heatmap_population}
+	Request = GetLegendGraphic
+	RequestCharset = null
+	Rules = [null]
+	Scale = -1.0
+	Strict = true
+	Styles = [StyleImpl[ name=style_heatmap_population]]
+	Transparent = false
+	Version = 1.1.1
+	Width = 20
+	Wms = org.geoserver.wms.WMS@1db2248f
+2019-12-09 10:22:44,570 INFO [org.geoserver] - GeoServer configuration lock is enabled
+2019-12-09 10:22:45,106 INFO [org.geoserver] - Loaded style 'boundary_style'
+2019-12-09 10:22:45,119 INFO [org.geoserver] - Loaded style 'generic'
+2019-12-09 10:22:45,121 INFO [org.geoserver] - Loaded style 'line'
+2019-12-09 10:22:45,147 INFO [org.geoserver] - Loaded style 'point'
+2019-12-09 10:22:45,149 INFO [org.geoserver] - Loaded style 'pois'
+2019-12-09 10:22:45,151 INFO [org.geoserver] - Loaded style 'raster'
+2019-12-09 10:22:45,156 INFO [org.geoserver] - Loaded style 'polygon'
+2019-12-09 10:22:45,173 INFO [org.geoserver] - Loaded default workspace cite
+2019-12-09 10:22:45,234 INFO [org.geoserver] - Loaded workspace 'cite'
+2019-12-09 10:22:45,302 INFO [org.geoserver] - Loaded style 'lit'
+2019-12-09 10:22:45,312 INFO [org.geoserver] - Loaded style 'style_heatmap'
+2019-12-09 10:22:45,322 INFO [org.geoserver] - Loaded style 'style_heatmap_area_isochrone'
+2019-12-09 10:22:45,325 INFO [org.geoserver] - Loaded style 'pois'
+2019-12-09 10:22:45,332 INFO [org.geoserver] - Loaded style 'style_heatmap_luptai'
+2019-12-09 10:22:45,343 INFO [org.geoserver] - Loaded style 'style_heatmap_population'
+2019-12-09 10:22:45,345 INFO [org.geoserver] - Loaded style 'style_wheelchair'
+2019-12-09 10:22:46,960 INFO [org.geoserver] - Loaded data store 'database', enabled
+2019-12-09 10:22:50,755 INFO [org.geoserver] - Loaded feature type 'download_isochrones', enabled
+2019-12-09 10:22:50,830 INFO [org.geoserver] - Loaded layer 'download_isochrones'
+2019-12-09 10:22:50,847 INFO [org.geoserver] - Loaded feature type 'download_reached_network', enabled
+2019-12-09 10:22:50,851 INFO [org.geoserver] - Loaded layer 'download_reached_network'
+2019-12-09 10:22:50,865 INFO [org.geoserver] - Loaded feature type 'heatmap_area_isochrone', enabled
+2019-12-09 10:22:50,866 INFO [org.geoserver] - Loaded layer 'heatmap_area_isochrone'
+2019-12-09 10:22:50,872 INFO [org.geoserver] - Loaded feature type 'heatmap', enabled
+2019-12-09 10:22:50,881 INFO [org.geoserver] - Loaded layer 'heatmap'
+2019-12-09 10:22:50,890 INFO [org.geoserver] - Loaded feature type 'heatmap_luptai', enabled
+2019-12-09 10:22:50,894 INFO [org.geoserver] - Loaded layer 'heatmap_luptai'
+2019-12-09 10:22:50,898 INFO [org.geoserver] - Loaded feature type 'isochrones', enabled
+2019-12-09 10:22:50,906 INFO [org.geoserver] - Loaded layer 'isochrones'
+2019-12-09 10:22:50,910 INFO [org.geoserver] - Loaded feature type 'heatmap_population', enabled
+2019-12-09 10:22:50,913 INFO [org.geoserver] - Loaded layer 'heatmap_population'
+2019-12-09 10:22:50,917 INFO [org.geoserver] - Loaded feature type 'input_network', enabled
+2019-12-09 10:22:50,924 INFO [org.geoserver] - Loaded layer 'input_network'
+2019-12-09 10:22:50,928 INFO [org.geoserver] - Loaded feature type 'isochrones_time', enabled
+2019-12-09 10:22:50,935 INFO [catalog.impl] - Layer cite:isochrones_time is missing the default style, assigning one automatically
+2019-12-09 10:22:52,149 INFO [org.geoserver] - Loaded layer 'isochrones_time'
+2019-12-09 10:22:52,153 INFO [org.geoserver] - Loaded feature type 'pois', enabled
+2019-12-09 10:22:52,155 INFO [org.geoserver] - Loaded layer 'pois'
+2019-12-09 10:22:52,157 INFO [org.geoserver] - Loaded feature type 'network_modification', enabled
+2019-12-09 10:22:52,158 INFO [catalog.impl] - Layer cite:network_modification is missing the default style, assigning one automatically
+2019-12-09 10:22:52,184 INFO [org.geoserver] - Loaded layer 'network_modification'
+2019-12-09 10:22:52,189 INFO [org.geoserver] - Loaded feature type 'pois_info', enabled
+2019-12-09 10:22:52,197 INFO [org.geoserver] - Loaded layer 'pois_info'
+2019-12-09 10:22:52,198 INFO [org.geoserver] - Loaded feature type 'population', enabled
+2019-12-09 10:22:52,200 INFO [catalog.impl] - Layer cite:population is missing the default style, assigning one automatically
+2019-12-09 10:22:52,227 WARN [geoserver.catalog] - Error while getting feature type, flushing cache and retrying: Error occurred building feature type
+2019-12-09 10:22:52,610 WARN [catalog.impl] - Layer cite:population is missing the default style, failed to associate one automatically
+java.io.IOException: Error occurred building feature type
+	at org.geotools.jdbc.JDBCFeatureSource.buildFeatureType(JDBCFeatureSource.java:358)
+	at org.geotools.jdbc.JDBCDataStore.createFeatureSource(JDBCDataStore.java:942)
+	at org.geotools.data.store.ContentDataStore.getFeatureSource(ContentDataStore.java:333)
+	at org.geotools.data.store.ContentDataStore.getFeatureSource(ContentDataStore.java:303)
+	at org.geotools.data.store.ContentDataStore.getSchema(ContentDataStore.java:290)
+	at org.geotools.jdbc.JDBCDataStore.createVirtualTable(JDBCDataStore.java:332)
+	at org.geoserver.catalog.VirtualTableCallback.initialize(VirtualTableCallback.java:56)
+	at org.geoserver.catalog.ResourcePool.getCacheableFeatureType(ResourcePool.java:919)
+	at org.geoserver.catalog.ResourcePool.tryGetFeatureType(ResourcePool.java:901)
+	at org.geoserver.catalog.ResourcePool.getFeatureType(ResourcePool.java:893)
+	at org.geoserver.catalog.ResourcePool.getFeatureType(ResourcePool.java:878)
+	at org.geoserver.catalog.impl.FeatureTypeInfoImpl.getFeatureType(FeatureTypeInfoImpl.java:123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.geoserver.catalog.impl.ModificationProxy.invoke(ModificationProxy.java:127)
+	at com.sun.proxy.$Proxy53.getFeatureType(Unknown Source)
+	at org.geoserver.catalog.CatalogBuilder.getDefaultStyle(CatalogBuilder.java:1565)
+	at org.geoserver.catalog.impl.CatalogImpl.validate(CatalogImpl.java:696)
+	at org.geoserver.catalog.impl.CatalogImpl.add(CatalogImpl.java:636)
+	at org.geoserver.config.GeoServerLoader$LayerLoader.accept(GeoServerLoader.java:206)
+	at org.geoserver.config.GeoServerLoader.loadDataStore(GeoServerLoader.java:766)
+	at org.geoserver.config.GeoServerLoader.readCatalog(GeoServerLoader.java:575)
+	at org.geoserver.config.GeoServerLoader.readCatalog(GeoServerLoader.java:394)
+	at org.geoserver.config.DefaultGeoServerLoader.loadCatalog(DefaultGeoServerLoader.java:34)
+	at org.geoserver.config.GeoServerLoader.postProcessBeforeInitialization(GeoServerLoader.java:260)
+	at org.geoserver.config.GeoServerLoaderProxy.postProcessBeforeInitialization(GeoServerLoaderProxy.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:674)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:674)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:674)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1648)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1239)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:855)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:758)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:400)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.geoserver.platform.GeoServerContextLoaderListener.contextInitialized(GeoServerContextLoaderListener.java:22)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4668)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5136)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:713)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:631)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1832)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:526)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1577)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:929)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:928)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:638)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.postgresql.util.PSQLException: ERROR: column reference "population" is ambiguous
+  Position: 42
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2476)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2189)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:300)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:301)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:287)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:264)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:231)
+	at org.apache.commons.dbcp.DelegatingStatement.executeQuery(DelegatingStatement.java:208)
+	at org.apache.commons.dbcp.DelegatingStatement.executeQuery(DelegatingStatement.java:208)
+	at org.geotools.jdbc.JDBCFeatureSource.getColumnMetadata(JDBCFeatureSource.java:875)
+	at org.geotools.jdbc.JDBCFeatureSource.buildFeatureType(JDBCFeatureSource.java:192)
+	... 145 more
+2019-12-09 10:22:52,680 INFO [org.geoserver] - Loaded layer 'population'
+2019-12-09 10:22:52,684 INFO [org.geoserver] - Loaded feature type 'save_isochrones', enabled
+2019-12-09 10:22:52,697 INFO [org.geoserver] - Loaded layer 'save_isochrones'
+2019-12-09 10:22:52,702 INFO [org.geoserver] - Loaded feature type 'reached_network', enabled
+2019-12-09 10:22:52,703 INFO [org.geoserver] - Loaded layer 'reached_network'
+2019-12-09 10:22:52,747 INFO [org.geoserver] - Loaded feature type 'show_network', enabled
+2019-12-09 10:22:52,767 INFO [org.geoserver] - Loaded layer 'show_network'
+2019-12-09 10:22:52,798 INFO [org.geoserver] - Loaded feature type 'starting_point_isochrones', enabled
+2019-12-09 10:22:52,800 INFO [org.geoserver] - Loaded layer 'starting_point_isochrones'
+2019-12-09 10:22:52,811 INFO [org.geoserver] - Loaded feature type 'study_area', enabled
+2019-12-09 10:22:52,816 INFO [org.geoserver] - Loaded layer 'study_area'
+2019-12-09 10:22:52,818 INFO [org.geoserver] - Loaded feature type 'thematic_data', enabled
+2019-12-09 10:22:52,826 INFO [catalog.impl] - Layer cite:thematic_data is missing the default style, assigning one automatically
+2019-12-09 10:22:52,867 WARN [geoserver.catalog] - Error while getting feature type, flushing cache and retrying: Error occurred building feature type
+2019-12-09 10:22:52,889 WARN [catalog.impl] - Layer cite:thematic_data is missing the default style, failed to associate one automatically
+java.io.IOException: Error occurred building feature type
+	at org.geotools.jdbc.JDBCFeatureSource.buildFeatureType(JDBCFeatureSource.java:358)
+	at org.geotools.jdbc.JDBCDataStore.createFeatureSource(JDBCDataStore.java:942)
+	at org.geotools.data.store.ContentDataStore.getFeatureSource(ContentDataStore.java:333)
+	at org.geotools.data.store.ContentDataStore.getFeatureSource(ContentDataStore.java:303)
+	at org.geotools.data.store.ContentDataStore.getSchema(ContentDataStore.java:290)
+	at org.geotools.jdbc.JDBCDataStore.createVirtualTable(JDBCDataStore.java:332)
+	at org.geoserver.catalog.VirtualTableCallback.initialize(VirtualTableCallback.java:56)
+	at org.geoserver.catalog.ResourcePool.getCacheableFeatureType(ResourcePool.java:919)
+	at org.geoserver.catalog.ResourcePool.tryGetFeatureType(ResourcePool.java:901)
+	at org.geoserver.catalog.ResourcePool.getFeatureType(ResourcePool.java:893)
+	at org.geoserver.catalog.ResourcePool.getFeatureType(ResourcePool.java:878)
+	at org.geoserver.catalog.impl.FeatureTypeInfoImpl.getFeatureType(FeatureTypeInfoImpl.java:123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.geoserver.catalog.impl.ModificationProxy.invoke(ModificationProxy.java:127)
+	at com.sun.proxy.$Proxy53.getFeatureType(Unknown Source)
+	at org.geoserver.catalog.CatalogBuilder.getDefaultStyle(CatalogBuilder.java:1565)
+	at org.geoserver.catalog.impl.CatalogImpl.validate(CatalogImpl.java:696)
+	at org.geoserver.catalog.impl.CatalogImpl.add(CatalogImpl.java:636)
+	at org.geoserver.config.GeoServerLoader$LayerLoader.accept(GeoServerLoader.java:206)
+	at org.geoserver.config.GeoServerLoader.loadDataStore(GeoServerLoader.java:766)
+	at org.geoserver.config.GeoServerLoader.readCatalog(GeoServerLoader.java:575)
+	at org.geoserver.config.GeoServerLoader.readCatalog(GeoServerLoader.java:394)
+	at org.geoserver.config.DefaultGeoServerLoader.loadCatalog(DefaultGeoServerLoader.java:34)
+	at org.geoserver.config.GeoServerLoader.postProcessBeforeInitialization(GeoServerLoader.java:260)
+	at org.geoserver.config.GeoServerLoaderProxy.postProcessBeforeInitialization(GeoServerLoaderProxy.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1737)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:674)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:674)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:674)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1648)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1239)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:855)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:758)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:400)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.geoserver.platform.GeoServerContextLoaderListener.contextInitialized(GeoServerContextLoaderListener.java:22)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4668)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5136)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:713)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:695)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:631)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1832)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:526)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:425)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1577)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:929)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:928)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:638)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "munich_addresses" does not exist
+  Position: 90
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2476)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2189)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:300)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:301)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:287)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:264)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:231)
+	at org.apache.commons.dbcp.DelegatingStatement.executeQuery(DelegatingStatement.java:208)
+	at org.apache.commons.dbcp.DelegatingStatement.executeQuery(DelegatingStatement.java:208)
+	at org.geotools.jdbc.JDBCFeatureSource.getColumnMetadata(JDBCFeatureSource.java:875)
+	at org.geotools.jdbc.JDBCFeatureSource.buildFeatureType(JDBCFeatureSource.java:192)
+	... 145 more
+2019-12-09 10:22:52,916 INFO [org.geoserver] - Loaded layer 'thematic_data'
+2019-12-09 10:22:52,918 INFO [org.geoserver] - Loaded feature type 'study_area_union', enabled
+2019-12-09 10:22:52,919 INFO [org.geoserver] - Loaded layer 'study_area_union'
+2019-12-09 10:22:52,923 INFO [org.geoserver] - Loaded feature type 'thematic_data_json', enabled
+2019-12-09 10:22:52,924 INFO [catalog.impl] - Layer cite:thematic_data_json is missing the default style, assigning one automatically
+2019-12-09 10:22:52,954 INFO [org.geoserver] - Loaded layer 'thematic_data_json'
+2019-12-09 10:22:52,956 INFO [org.geoserver] - Loaded feature type 'ways', enabled
+2019-12-09 10:22:52,963 INFO [org.geoserver] - Loaded layer 'ways'
+2019-12-09 10:22:52,964 INFO [org.geoserver] - Loaded feature type 'ways_lit', enabled
+2019-12-09 10:22:52,965 INFO [org.geoserver] - Loaded layer 'ways_lit'
+2019-12-09 10:22:52,967 INFO [org.geoserver] - Loaded feature type 'ways_modified', enabled
+2019-12-09 10:22:52,968 INFO [org.geoserver] - Loaded layer 'ways_modified'
+2019-12-09 10:22:52,970 INFO [org.geoserver] - Loaded feature type 'ways_wheelchair', enabled
+2019-12-09 10:22:52,971 INFO [org.geoserver] - Loaded layer 'ways_wheelchair'
+2019-12-09 10:22:53,445 INFO [org.geoserver] - Loaded service 'WMTSInfoImpl--47482869:16eea2eea03:-8000', enabled
+2019-12-09 10:22:53,509 INFO [org.geoserver] - Loaded service 'wcs', enabled
+2019-12-09 10:22:53,572 INFO [org.geoserver] - Loaded service 'wfs', enabled
+2019-12-09 10:22:53,686 INFO [org.geoserver] - Loaded service 'wms', enabled
+2019-12-09 10:22:53,760 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache.xml' in directory '/var/local/geoserver/gwc'.
+2019-12-09 10:22:53,971 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-12-09 10:22:53,975 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-12-09 10:22:53,976 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+2019-12-09 10:22:54,453 WARN [config.XMLConfiguration] - ********************************************************************************
+2019-12-09 10:22:54,454 WARN [config.XMLConfiguration] - *** GWC configuration validation error: cvc-elt.1.a: Cannot find the declaration of element 'gwcConfiguration'.
+2019-12-09 10:22:54,455 WARN [config.XMLConfiguration] - *** Will try to use configuration anyway. Please check the order of declared elements against the schema.
+2019-12-09 10:22:54,455 WARN [config.XMLConfiguration] - ********************************************************************************
+2019-12-09 10:22:54,534 INFO [config.XMLConfiguration] - Initializing GridSets from gwc
+2019-12-09 10:22:54,539 INFO [config.XMLConfiguration] - Initializing layers from gwc
+2019-12-09 10:22:54,633 INFO [gwc.layer] - Initializing GWC configuration based on GeoServer's Catalog
+2019-12-09 10:22:54,633 INFO [gwc.layer] - GeoServer TileLayer store base directory is: gwc-layers
+2019-12-09 10:22:54,634 INFO [gwc.layer] - Loading tile layers from gwc-layers
+2019-12-09 10:22:55,009 INFO [storage.BlobStoreAggregator] - BlobStoreConfiguration gwc contained no blob store infos.
+2019-12-09 10:22:55,074 INFO [storage.DefaultStorageFinder] - ***********************************************************************************************************************
+2019-12-09 10:22:55,076 INFO [storage.DefaultStorageFinder] - *** Found Java environment variable GEOSERVER_DATA_DIR set to /var/local/geoserver, using it as the default prefix. ***
+2019-12-09 10:22:55,076 INFO [storage.DefaultStorageFinder] - ***********************************************************************************************************************
+2019-12-09 10:22:55,336 INFO [gwc.config] - Initializing GeoServer specific GWC configuration from gwc-gs.xml
+2019-12-09 10:22:55,594 WARN [gce.imagemosaic] - Unable to set ordering between tiff readers spi
+2019-12-09 10:22:56,254 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache-diskquota.xml' in directory '/var/local/geoserver/gwc'.
+2019-12-09 10:22:56,312 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache-diskquota-jdbc.xml' in directory '/var/local/geoserver/gwc'.
+2019-12-09 10:22:56,318 INFO [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+2019-12-09 10:22:56,381 INFO [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+2019-12-09 10:22:56,383 INFO [diskquota.DiskQuotaMonitor] - Setting up disk quota periodic enforcement task
+2019-12-09 10:22:56,383 INFO [diskquota.DiskQuotaMonitor] - 0 layers configured with their own quotas. 
+2019-12-09 10:22:56,395 INFO [diskquota.DiskQuotaMonitor] - 19 layers attached to global quota 500.0 MB
+2019-12-09 10:22:56,549 INFO [diskquota.DiskQuotaMonitor] - Disk quota periodic enforcement task set up every 10 SECONDS
+2019-12-09 10:22:57,134 INFO [geowebcache.GeoWebCacheDispatcher] - Invoked setServletPrefix(gwc)
+2019-12-09 10:22:57,162 INFO [georss.GeoRSSPoller] - Initializing GeoRSS poller in a background job...
+2019-12-09 10:22:57,166 INFO [georss.GeoRSSPoller] - No enabled GeoRSS feeds found, poller will not run.
+2019-12-09 10:22:57,417 INFO [wms.WMSService] - Will NOT recombine tiles for non-tiling clients.
+2019-12-09 10:22:57,418 INFO [wms.WMSService] - Will proxy requests to backend that are not getmap or getcapabilities.
+2019-12-09 10:23:14,775 INFO [geoserver.security] - Start reloading user/groups for service named default
+2019-12-09 10:23:14,810 INFO [geoserver.security] - Reloading user/groups successful for service named default
+2019-12-09 10:23:15,458 INFO [geoserver.security] - AuthenticationCache Initialized with 1000 Max Entries, 300 seconds idle time, 600 seconds time to live and 3 concurrency level
+2019-12-09 10:23:15,459 INFO [geoserver.security] - AuthenticationCache Eviction Task created to run every 600 seconds
+2019-12-09 10:32:05,683 INFO [geoserver.wfs] - 
+Request: getServiceInfo
+2019-12-09 10:32:06,490 INFO [geoserver.wfs] - 
+Request: getFeature
+    service = WFS
+    version = 1.1.0
+    baseUrl = http://localhost:80/geoserver/
+    query[0]:
+        srsName = EPSG:4326
+        typeName[0] = {muc}study_area_union
+    outputFormat = json
+    resultType = results
+2019-12-09 10:32:06,554 INFO [wfs.json] - about to encode JSON
+2019-12-09 10:32:21,384 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-12-09 10:32:22,895 WARN [operation.projection] - Possible use of "Popular Visualisation Pseudo Mercator" projection outside its valid area.
+Longitude 2147483287°00.0'W is out of range (±180°).
+2019-12-09 10:32:23,611 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:80/geoserver/
+	Bbox = SRSEnvelope[-972534.5861007705 : -961637.532255865, 5038989.268186415 : 5045758.722503921]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 1417
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@9c7a011e]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-972534.5861007705,5038989.268186415,-961637.532255865,5045758.722503921, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=2281, HEIGHT=1417, TRANSPARENT=true, LAYERS=cite:heatmap_population}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=style_heatmap_population]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 2281
+2019-12-09 10:32:25,420 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-12-09 10:32:26,128 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:80/geoserver/
+	Bbox = SRSEnvelope[-973521.1014970761 : -951736.5484358008, 5031252.407729675 : 5044791.316364686]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 1417
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@9c7a011e]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-973521.1014970761,5031252.407729675,-951736.5484358008,5044791.316364686, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=2280, HEIGHT=1417, TRANSPARENT=true, LAYERS=cite:heatmap_population}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=style_heatmap_population]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 2280
+2019-12-09 10:32:27,690 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-12-09 10:32:28,264 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:80/geoserver/
+	Bbox = SRSEnvelope[-984336.9409994285 : -940767.834876878, 5024922.466324809 : 5052000.283594833]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 1417
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@9c7a011e]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-984336.9409994285,5024922.466324809,-940767.834876878,5052000.283594833, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=2280, HEIGHT=1417, TRANSPARENT=true, LAYERS=cite:heatmap_population}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=style_heatmap_population]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 2280
+2019-12-09 10:32:30,837 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-12-09 10:32:31,019 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:80/geoserver/
+	Bbox = SRSEnvelope[-985082.202025209 : -941513.0959026584, 5029757.108363846 : 5056834.92563387]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 1417
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@9c7a011e]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-985082.202025209,5029757.108363846,-941513.0959026584,5056834.92563387, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=2280, HEIGHT=1417, TRANSPARENT=true, LAYERS=cite:heatmap_population}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=style_heatmap_population]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 2280
+2019-12-09 10:32:37,213 INFO [geoserver.wms] - 
+Request: getServiceInfo
+2019-12-09 10:32:37,541 INFO [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:80/geoserver/
+	Bbox = SRSEnvelope[-973740.8579533959 : -951956.3048921207, 5034567.863831545 : 5048106.772466556]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	CQLFilter = null
+	Crs = PROJCS["WGS 84 / Pseudo-Mercator", 
+  GEOGCS["WGS 84", 
+    DATUM["World Geodetic System 1984", 
+      SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+      AUTHORITY["EPSG","6326"]], 
+    PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Geodetic latitude", NORTH], 
+    AXIS["Geodetic longitude", EAST], 
+    AUTHORITY["EPSG","4326"]], 
+  PROJECTION["Popular Visualisation Pseudo Mercator", AUTHORITY["EPSG","1024"]], 
+  PARAMETER["semi_minor", 6378137.0], 
+  PARAMETER["latitude_of_origin", 0.0], 
+  PARAMETER["central_meridian", 0.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 0.0], 
+  PARAMETER["false_northing", 0.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH], 
+  AUTHORITY["EPSG","3857"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Filters = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 1417
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@9c7a011e]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, FORMAT=image/png, CRS=EPSG:3857, BBOX=-973740.8579533959,5034567.863831545,-951956.3048921207,5048106.772466556, VERSION=1.3.0, STYLES=, SERVICE=WMS, WIDTH=2280, HEIGHT=1417, TRANSPARENT=true, LAYERS=cite:heatmap_population}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = urn:ogc:def:crs:EPSG:3857
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=style_heatmap_population]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.3.0
+	ViewParams = null
+	Width = 2280
