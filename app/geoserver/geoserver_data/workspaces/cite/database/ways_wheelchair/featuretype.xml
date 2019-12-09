@@ -41,8 +41,7 @@
 )&#xd;
 SELECT wheelchair, wheelchair_classified, w.geom&#xd;
 FROM ways w, study_area s&#xd;
-WHERE class_id::text NOT IN (SELECT UNNEST(excluded_class_id_walking) FROM variables)&#xd;
-AND (foot IS NULL OR foot NOT IN (SELECT UNNEST(categories_no_foot) FROM variables))&#xd;
+WHERE (foot IS NULL OR foot NOT IN (SELECT UNNEST(categories_no_foot) FROM variables))&#xd;
 AND (sidewalk IS NULL OR sidewalk NOT IN (SELECT UNNEST(categories_sidewalk_no_foot) FROM variables))&#xd;
 AND ST_Intersects(s.geom,w.geom)
 </sql>

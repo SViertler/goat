@@ -29,8 +29,8 @@ FROM (
 WHERE v.id = y.SOURCE;
 
 UPDATE ways 
-SET foot = p.foot, bicycle = p.bicycle,
-from planet_osm_line p
+SET foot = p.foot, bicycle = p.bicycle
+FROM planet_osm_line p
 WHERE ways.osm_id = p.osm_id;
 
 /*Split long ways that. Parameter max_length can be set in the variable container*/
